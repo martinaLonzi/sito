@@ -1,0 +1,177 @@
+/* PARTE PERSONALE */
+.cardPersonale {
+    background-color: transparent; /* bianco trasparente */
+    backdrop-filter: blur(10px); /* se vuoi effetto vetro */
+  }
+  #finisher-header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* sta sotto il resto */
+  }
+  /* bollini */
+  .sfondo{
+    background-color: #ffffff;
+  }
+  /* spiegazione */
+  .sezione {
+    margin: 40px 0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    scroll-margin-top: 100px; /* Altezza approssimativa del tuo header */
+    padding-top: 100px; /* Spazio aggiuntivo per sicurezza */
+    margin-top: -30px; /* Compensa il padding per mantenere il layout */
+  }
+  .testo {
+    padding-right: 30px;
+  }
+  .testo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .testo p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .bottne {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #012a4a; /* Blu acceso */
+    color: #ffffff; /* Testo bianco */
+    text-decoration: none; /* Rimuovi la sottolineatura */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    margin-left: 15px; /* Assicurati che non ci sia margine sinistro */
+    margin-right: auto; /* Impedisce che il bottone si sposti a destra */
+  }
+  
+  .bottne:hover {
+    background-color: #0056b3; /* Blu più scuro */
+    transform: translateY(-2px); /* Effetto leggero di sollevamento */
+  }
+  
+  .bottne:active {
+    transform: translateY(1px); /* Leggera pressione */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .carosello .carousel-inner img {
+    width: 100%; /* Garantisce che le immagini occupino tutta la larghezza del carosello */
+    height: auto;
+  }
+  
+  /* Sezione immagine iniziale */
+  .container-fluid{
+    width: 100vw;
+    height: 100px;
+  }
+  .row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    /* Per dispositivi mobili, mettiamo il testo sopra il carosello */
+    .sezione .row {
+      flex-direction: column-reverse;
+    }
+    }
+
+
+/* Stili sezione Bollini */
+.bollini-full {
+  padding: 2rem 0;
+  background-color: #f8f9fa; /* Sfondo leggero, modificabile */
+}
+
+.bollini-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  gap: 1.5rem;
+}
+
+.bollino {
+  flex: 0 0 auto;
+  width: 150px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #013a63;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bollino:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bollino img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.bollino p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .bollino {
+    width: 130px;
+  }
+  
+  .bollino img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bollini-container {
+    justify-content: center !important;
+    gap: 1rem;
+  }
+  
+  .bollino {
+    width: 110px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bollino img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .bollino p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bollino {
+    width: 90px;
+    padding: 0.6rem;
+  }
+  
+  .bollino img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .bollino p {
+    font-size: 0.7rem;
+  }
+}

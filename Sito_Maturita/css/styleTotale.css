@@ -1,0 +1,46 @@
+/* Stile generale */
+html {
+    scroll-behavior: smooth;
+  }
+   body {
+    margin: 0;  /* Rimuove il margine predefinito del body */
+    font-family: Arial, sans-serif;  /* Imposta il font */
+    color: #012a4a;  /* Colore del testo */
+    background-color: #ffffff;  /* Colore di sfondo */
+  }
+  
+  /* Header */
+  header {
+    background-color: #caf0f8;  /* Colore di sfondo dell'header */
+    padding: 15px 20px;  /* Padding interno */
+    display: flex;  /* Utilizza il Flexbox per il layout */
+    justify-content: space-between;  /* Spazio tra logo e menu */
+    align-items: center;  /* Allinea verticalmente al centro */
+    position: fixed; /* CAMBIATO da relative a fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /*charcoal*/;
+  }
+  
+  /* Logo nel header */
+  header .logo {
+    font-size: 24px;  /* Dimensione del font del logo */
+    font-weight: bold;  /* Grassetto per il logo */
+    color: #0077b6;  /* Colore del testo dei link */
+    text-decoration: none;  /* Rimuove la sottolineatura */
+  }
+  
+  /* Stile dei link di navigazione */
+  header nav a {
+    color: #0077b6;  /* Colore del testo dei link */
+    text-decoration: none;  /* Rimuove la sottolineatura */
+    margin: 0 15px;  /* Distanza tra i link */
+    font-size: 18px;  /* Dimensione del font dei link */
+    transition: color 0.3s;  /* Transizione per l'effetto hover */
+  }
+  
+  /* Effetto hover per i link */
+  header nav a:hover {
+    color: #012a4a;  /* Cambia il colore quando si passa sopra */
+  }
