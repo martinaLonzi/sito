@@ -49,17 +49,19 @@
     cursor: pointer;
     margin-left: 15px; /* Assicurati che non ci sia margine sinistro */
     margin-right: auto; /* Impedisce che il bottone si sposti a destra */
+    width: 150px;
   }
   
   .bottne:hover {
     background-color: #0056b3; /* Blu più scuro */
     transform: translateY(-2px); /* Effetto leggero di sollevamento */
   }
-  
+
   .bottne:active {
     transform: translateY(1px); /* Leggera pressione */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+
   .carosello .carousel-inner img {
     width: 100%; /* Garantisce che le immagini occupino tutta la larghezza del carosello */
     height: auto;
@@ -88,13 +90,15 @@
   padding: 2rem 0;
   background-color: #f8f9fa; /* Sfondo leggero, modificabile */
 }
-
 .bollini-container {
+  justify-content: center; /* Invece di space-around */
+  gap: 30px; /* Spazio tra i bollini */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   gap: 1.5rem;
 }
+
 
 .bollino {
   flex: 0 0 auto;
