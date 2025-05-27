@@ -90,13 +90,15 @@
   padding: 2rem 0;
   background-color: #f8f9fa; /* Sfondo leggero, modificabile */
 }
+
 .bollini-container {
-  justify-content: center; /* Invece di space-around */
-  gap: 30px; /* Spazio tra i bollini */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribuisce i bollini su tutta la riga */
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  gap: 1.5rem;
 }
 
 
@@ -178,4 +180,7 @@
   .bollino p {
     font-size: 0.7rem;
   }
+}
+#bollini {
+  scroll-margin-top: 100px; /* altezza header fisso */
 }
