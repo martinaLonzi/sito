@@ -62,80 +62,91 @@
     gap: 20px;
   }
   
-  /* Stile di ogni box */
-  .box {
-    background-color: #bbdefb;  /* Colore di sfondo del box */
-    border-color:#013a63 ;
-    border-style: solid; 
-    border-width: 6px;
-    padding: 20px;  /* Spazio interno del box */
-    width: 400px;  /* Larghezza del box */
-    text-align: center;  /* Allinea il testo al centro */
-    border-radius: 10px;  /* Angoli arrotondati */
-    transition: transform 0.3s;  /* Transizione quando si passa sopra */
-    position: relative;  /* Posizionamento relativo per l'animazione */
-    /* Inizialmente il box è invisibile e spostato verso il basso */
-    opacity: 0;  /* Inizialmente invisibile */
-    transform: translateY(30px);  /* Spostato leggermente in basso */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;  /* Transizione per effetto di apparizione */
-  }
-  
-  /* Quando il box entra nella viewport, diventa visibile */
-  .box.show {
-    opacity: 1;  /* Il box diventa visibile */
-    transform: translateY(0);  /* Torna alla posizione originale */
-  }
-  
-  /* Posizionamento alternato dei box (a sinistra o a destra) */
-  .box:nth-child(odd) {
-    align-self: flex-start;  /* Posiziona a sinistra */
-    margin-left: 10%;  /* Distanza dalla sinistra */
-    margin-top: -30px;  /* Box dispari (odd) sono un po' più in alto */
-  }
-  
-  
-  .box:nth-child(even) {
-    align-self: flex-end;  /* Posiziona a destra */
-    margin-right: 10%;  /* Distanza dalla destra */
-    margin-top: 400px;  /* Box dispari (even) sono un po' più in basso */
-  }
-  
-  /* Effetto hover per il box */
-  .box:hover {
-    transform: scale(1.05);  /* Ingrandisce il box quando si passa sopra */
-  }
-  
-  /* Stile del titolo dentro il box */
-  .box h3 {
-    color: #013a63;  /* Colore del titolo */
-    font-size: 30px;  /* Dimensione del font */
-  }
-  
-  /* Stile del paragrafo dentro il box */
-  .box p {
-    font-size: 20px;  /* Dimensione del font */
-    margin-bottom: 15px;  /* Distanza sotto il paragrafo */
-  }
-  
-  /* Stile del link dentro il box */
-  .box a {
-    color: #fff;  /* Colore del testo del link */
-    text-decoration: none;  /* Rimuove la sottolineatura */
-    font-weight: bold;  /* Grassetto */
-    background-color: #013a63;  /* Colore di sfondo del link */
-    padding: 10px 12px;  /* Spazio interno del link */
-    border-radius: 5px;  /* Angoli arrotondati */
-  }
-  
-  /* Effetto hover per il link */
-  .box a:hover {
-    background-color: #0077b6;  /* Colore di sfondo del link al passaggio del mouse */
-  }
-  
-  /* Stile delle immagini nei box */
-  .box img {
-    max-width: 100%;  /* L'immagine non sarà mai più larga del box */
-    height: auto;  /* Mantiene le proporzioni originali */
-    border-radius: 10px;  /* Angoli arrotondati per l'immagine */
-    margin-bottom: 10px;  /* Distanza sotto l'immagine */
-  }
+ /* Container dei box */
+ .container {
+  display: block; /* metti i box uno sotto l'altro */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ }
+
+/* Ogni box */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Stile base del box */
+.box {
+  background-color: #bbdefb;
+  border: 6px solid #013a63;
+  padding: 30px;
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    box-shadow 0.3s ease,
+    scale 0.3s ease;
+}
+
+/* Sfalsamento alternato */
+.box:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.box:nth-child(even) {
+  align-self: flex-end;
+}
+
+/* Quando i box entrano in viewport */
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Effetto hover */
+.box:hover {
+  transform: translateY(0) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+/* Titolo box */
+.box h3 {
+  color: #013a63;
+  font-size: 30px;
+}
+
+/* Testo */
+.box p {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Link */
+.box a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #013a63;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.box a:hover {
+  background-color: #0077b6;
+}
+
+/* Immagine */
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
