@@ -30,31 +30,34 @@
     </nav>
 </header>
    
-<div class="header finisher-header" style="width: 100%; height: 500px; position: relative;">
+<div class="header finisher-header" style="width: 100%; height: 300px; position: relative;">
   <div style="position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 100px;">
     Esperienza PCTO 
   </div>
 </div>
   
 <!-- immagine logical system-->
- <section class="pt-40">
+<section class="pt-40">
   <div class="container-fluid text-center">
-  <div class="image-box">
-    <img src="img/logical-white-2025-Photoroom.png" alt="Logo 2">
+    <div class="row justify-content-center">
+      <!-- Primo box -->
+      <div class="col-md-5 m-3 p-4" >
+        <img src="img/logical-white-2025-Photoroom.png"style="max-height: 80%;" alt="Logo 1" class="img-fluid">
+      </div>
+      
+      <!-- Secondo box -->
+      <div class="col-md-5 m-3 p-4">
+        <img src="img/logicalSystemSede.jpg" style="max-height: 80%;" alt="Logo 2" class="img-fluid">
+      </div>
+    </div>
   </div>
-</div>
 </section>
 
 <section class="pt-50">
   <div class="container">
-    <div class="row h-80 g-0">
-      <!-- LATO SINISTRO: IMMAGINE -->
-      <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
-        <img src="img/logicalSystemSede.jpg" class="img-fluid" style="max-height: 80%;" alt="Immagine Sinistra">
-    </div>
-  
-      <!-- LATO DESTRO: TITOLO + BOX -->
-      <div class="col-12 col-md-7 d-flex flex-column align-items-center justify-content-center text-center p-5">
+    <div class="row h-80 g-0 justify-content-center">
+      <!-- UNICA COLONNA CENTRALE: TITOLO + BOX -->
+      <div class="col-12 d-flex flex-column align-items-center justify-content-center text-center p-5">
         <div class="row w-100">
           <!-- BOX 1 -->
           <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -78,17 +81,15 @@
           <div class="col-12 col-md-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                <h3>Dove é sistuata?</h3> 
-                <p>Viale dell' Industria, 50, 60035 Jesi AN</p>
+                <h3>Dove è situata?</h3> 
+                <p>Viale dell'Industria, 50, 60035 Jesi AN</p>
               </div>
             </div>
           </div>
         </div>
-  
       </div>
     </div>
   </div>
-  
 </section>
 
 
@@ -102,14 +103,17 @@
   
 </section>
 
+<!-- periodo e ore totali-->
 <section class="box-section">
   <div class="container">
     <div class="row g-4">
 
-      <!-- Box 1: Period -->
+      <!-- Box 1: periodo -->
       <div class="col-12 col-md-6">
-        <div class="square-box">
-          <div class="box-header bg-violet">Periodo</div>
+        <div class="custom-box">
+          <div class="box-header-wrapper">
+            <span class="box-header">Periodo</span>
+          </div>
           <div class="box-body">
             Dal 18/5/2024 al 9/6/2024<br>
             e<br>
@@ -118,15 +122,21 @@
         </div>
       </div>
 
-      <!-- Box 2: Total hours -->
+      <!-- Box 2: ore totali -->
       <div class="col-12 col-md-6">
-        <div class="square-box">
-          <div class="box-header bg-red">Ore totali</div>
-          <div class="box-body">200 ore <br><br><br></div>
+        <div class="custom-box">
+          <div class="box-header-wrapper">
+            <span class="box-header">Ore totali</span>
+          </div>
+          <div class="box-body">
+            200 ore
+          </div>
         </div>
       </div>
-</section>
 
+    </div>
+  </div>
+</section>
 
 <section class="task-section">
   <div class="container">
