@@ -87,7 +87,7 @@ h1 {
   border: 1px solid #ddd; /* opzionale, per vedere i box */
   background: #fff;
   border-radius: 12px; /* bordo arrotondato */
-  background-color: #f8f9fa;
+  background-color: #f8f9fae1;
 }
 
 .box-header {
