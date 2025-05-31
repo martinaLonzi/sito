@@ -184,3 +184,6 @@
 #bollini {
   scroll-margin-top: 100px; /* altezza header fisso */
 }
+.custom-rounded {
+  border-radius: 15px;
+}
