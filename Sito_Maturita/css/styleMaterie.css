@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;  /* Imposta il font */
   color: #012a4a;  /* Colore del testo */
   background-color: #ffffff;  /* Colore di sfondo */
+  text-align: justify;
 }
   
   .section-boxes {
@@ -44,7 +45,7 @@ body {
   
   .subject-box h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 25px;
   }
   
   /* Responsive Design */

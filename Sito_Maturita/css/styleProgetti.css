@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #222;
+    text-align: justify;
   }
   
   .container {
@@ -53,6 +54,7 @@ body {
     font-size: 26px;
     margin-bottom: 15px;
     color: #012a4a;
+    font-weight: bold;
   }
   
   .box-text p {
