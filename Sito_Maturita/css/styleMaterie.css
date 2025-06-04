@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e9ecef;
-  }
+  margin: 0;  /* Rimuove il margine predefinito del body */
+  font-family: Arial, sans-serif;  /* Imposta il font */
+  color: #012a4a;  /* Colore del testo */
+  background-color: #ffffff;  /* Colore di sfondo */
+}
   
   .section-boxes {
     padding: 60px 20px;
