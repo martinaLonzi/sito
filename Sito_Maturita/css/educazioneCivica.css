@@ -1,0 +1,65 @@
+.titolo-sezione {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .descrizione-sezione {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.7;
+    margin-top: 15px;
+  }
+  
+  .box-civica {
+    background-color: #ebebeb69; /* Blu medio */
+    color: #000000;
+    border: 2px solid #00171f; /* BORDO visibile blu scuro */
+    border-radius: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 23, 31, 0.4);
+  }
+  
+  .box-civica:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 23, 31, 0.6);
+  }
+  
+  .box-civica .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .box-civica .card-text {
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .btn-outline-light {
+    border-color: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #eeeeee;
+    color: #000000;
+  }
+  
+  
+  img.img-fluid.rounded.shadow {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .img-progetto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
