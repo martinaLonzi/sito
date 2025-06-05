@@ -28,7 +28,7 @@
     padding-right: 30px;
   }
   .testo h2 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .testo p {
@@ -62,11 +62,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .carosello .carousel-inner img {
-    width: 100%; /* Garantisce che le immagini occupino tutta la larghezza del carosello */
-    height: auto;
-  }
-  
   /* Sezione immagine iniziale */
   .container-fluid{
     width: 100vw;
@@ -186,4 +181,11 @@
 }
 .custom-rounded {
   border-radius: 15px;
+}
+
+.img-sezione {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }

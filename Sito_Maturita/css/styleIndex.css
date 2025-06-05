@@ -1,7 +1,7 @@
 /* Hero Section (sezione principale con l'immagine di sfondo) */
 .hero {
     position: relative;
-    height: 70vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
     color: #fff;
     position: absolute;  /* Posizionamento assoluto sopra l'immagine */
     z-index: 2;  /* Assicura che il testo si sovrapponga sopra l'overlay */
-    font-size: 3rem;  /* Dimensione del font */
+    font-size: 5rem;  /* Dimensione del font */
     font-weight: bold;  /* Grassetto */
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);  /* Aggiunge una ombra al testo */
   }
