@@ -18,25 +18,31 @@
   /* spiegazione */
   .sezione {
     margin: 40px 0;
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #ccc;
     scroll-margin-top: 100px; /* Altezza approssimativa del tuo header */
-    padding-top: 100px; /* Spazio aggiuntivo per sicurezza */
+    padding-top: 70px; /* Spazio aggiuntivo per sicurezza */
+    padding-bottom: 70px;
     margin-top: -30px; /* Compensa il padding per mantenere il layout */
   }
   .testo {
     padding-right: 30px;
   }
   .testo h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
   }
   .testo p {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
   }
   .bottne {
-    display: inline-block;
+    display: flex; /* Cambiato da inline-block a flex */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
     padding: 10px 20px;
     background-color: #012a4a; /* Blu acceso */
     color: #ffffff; /* Testo bianco */
@@ -49,8 +55,10 @@
     cursor: pointer;
     margin-left: 15px; /* Assicurati che non ci sia margine sinistro */
     margin-right: auto; /* Impedisce che il bottone si sposti a destra */
-    width: 150px;
+    width: 130px;
   }
+
+ 
   
   .bottne:hover {
     background-color: #0056b3; /* Blu più scuro */
@@ -188,4 +196,9 @@
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.cardPersonale p {
+  margin-bottom: 10px;
+  text-align: justify;
 }
